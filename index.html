@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f0e5">
+  <title>دعوة زفاف | إلياس بوسهلة</title>
+  <meta name="description" content="دعوة لحضور حفل زفاف إلياس بوسهلة يوم 19 ديسمبر 2026 على الساعة 17:00 في المنار - تبسة.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap');
+    :root{--cream:#f7f0e5;--paper:#fffaf2;--gold:#b28a50;--gold-dark:#806039;--ink:#493b2c;--muted:#857563;--line:#dfcba9}
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--ink);font-family:"Cairo",sans-serif;background:radial-gradient(ellipse at top,#fffdf8 0%,var(--cream) 70%)}
+    .page{width:min(960px,calc(100% - 24px));margin:24px auto}
+    .language{display:flex;justify-content:center;gap:8px;margin:0 0 14px}
+    .language button{border:1px solid var(--line);background:#fffaf2;color:var(--gold-dark);padding:8px 17px;border-radius:22px;cursor:pointer;font:inherit}
+    .language button.active{background:var(--gold-dark);color:white}
+    .invitation{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(230px,.82fr) minmax(0,1.18fr);align-items:center;gap:28px;text-align:center;padding:42px 34px;border:1px solid var(--line);outline:1px solid rgba(178,138,80,.35);outline-offset:-9px;border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(255,250,242,.97));box-shadow:0 18px 55px rgba(91,68,37,.10)}
+    .invitation:before,.invitation:after{content:"❧";position:absolute;color:rgba(178,138,80,.28);font-family:serif;font-size:90px;line-height:1;pointer-events:none}
+    .invitation:before{top:5px;right:16px;transform:rotate(-35deg)}
+    .invitation:after{bottom:0;left:16px;transform:rotate(145deg)}
+    .portrait-wrap{position:relative;z-index:1}
+    .portrait{display:block;width:100%;max-height:610px;object-fit:cover;object-position:center top;border:5px solid #fff8ed;outline:1px solid var(--line);border-radius:170px 170px 18px 18px;box-shadow:0 12px 30px rgba(75,54,28,.17)}
+    .content{position:relative;z-index:1;padding:8px 0}
+    .eyebrow{color:var(--gold-dark);letter-spacing:1px;font-size:13px}
+    .verse{font-family:"Amiri",serif;font-size:23px;color:var(--gold-dark);line-height:1.8;margin:15px 0}
+    h1{font-family:"Amiri",serif;font-size:clamp(34px,5vw,52px);line-height:1.3;color:var(--gold-dark);margin:8px 0}
+    .intro{color:var(--muted);font-size:15px;line-height:2;margin:12px auto 20px}
+    .name{font-family:"Amiri",serif;font-size:clamp(34px,6vw,47px);font-weight:700;color:#70512f;margin:12px 0}
+    .ornament{display:flex;align-items:center;gap:12px;width:min(300px,85%);margin:20px auto;color:var(--gold)}
+    .ornament:before,.ornament:after{content:"";height:1px;background:var(--line);flex:1}
+    .details{display:grid;grid-template-columns:1fr;gap:11px;width:min(390px,100%);margin:22px auto}
+    .detail{border:1px solid var(--line);border-radius:13px;padding:13px 10px;background:rgba(247,240,229,.6)}
+    .detail .icon{font-size:21px}
+    .detail b{display:block;color:var(--gold-dark);margin:3px 0}
+    .detail span{font-size:15px;color:var(--muted)}
+    .closing{font-family:"Amiri",serif;color:var(--gold-dark);font-size:23px;line-height:1.7;margin:22px 0 0}
+    .footer{text-align:center;color:#9b8973;font-size:13px;margin:17px 0 25px}
+    body.fr{direction:ltr}
+    body.fr .invitation{direction:ltr}
+    body.fr .invitation:before{right:auto;left:16px}
+    body.fr .invitation:after{left:auto;right:16px}
+    @media(max-width:680px){
+      .page{width:calc(100% - 14px);margin:10px auto}
+      .invitation{grid-template-columns:1fr;gap:24px;padding:42px 18px 30px}
+      .portrait-wrap{width:min(78%,330px);margin:auto}
+      .portrait{max-height:490px}
+      .content{padding:0 3px}
+      .verse{font-size:21px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="language" aria-label="Language selector">
+      <button id="arBtn" class="active" type="button">العربية</button>
+      <button id="frBtn" type="button">Français</button>
+    </div>
+    <section class="invitation">
+      <div class="portrait-wrap">
+        <img class="portrait" src="elias-portrait.jpg" alt="صورة إلياس بوسهلة">
+      </div>
+      <div class="content">
+        <div class="eyebrow" data-ar="بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ" data-fr="AU NOM D’ALLAH, LE TOUT MISÉRICORDIEUX">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+        <div class="verse" data-ar="﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا ﴾" data-fr="« Parmi Ses signes : Il a créé de vous, pour vous, des épouses… »">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا ﴾</div>
+        <h1 data-ar="دعوة لحضور حفل زفاف" data-fr="Invitation au mariage">دعوة لحضور حفل زفاف</h1>
+        <p class="intro" data-ar="بكل الفرح والسرور، يشرفنا دعوتكم لمشاركتنا هذه المناسبة السعيدة." data-fr="C’est avec joie que nous vous invitons à partager avec nous cette heureuse occasion.">بكل الفرح والسرور، يشرفنا دعوتكم لمشاركتنا هذه المناسبة السعيدة.</p>
+        <div class="name">إلياس بوسهلة</div>
+        <div class="ornament">✦</div>
+        <div class="details">
+          <div class="detail">
+            <div class="icon">📅</div>
+            <b data-ar="التاريخ" data-fr="Date">التاريخ</b>
+            <span data-ar="السبت 19 ديسمبر 2026" data-fr="Samedi 19 décembre 2026">السبت 19 ديسمبر 2026</span>
+          </div>
+          <div class="detail">
+            <div class="icon">🕔</div>
+            <b data-ar="وقت الحضور" data-fr="Heure d’accueil">وقت الحضور</b>
+            <span data-ar="17:00 مساءً" data-fr="17h00">17:00 مساءً</span>
+          </div>
+          <div class="detail">
+            <div class="icon">📍</div>
+            <b data-ar="المكان" data-fr="Lieu">المكان</b>
+            <span data-ar="المنار - تبسة" data-fr="El Manar – Tébessa">المنار - تبسة</span>
+          </div>
+        </div>
+        <div class="closing" data-ar="حضوركم يُشرّفنا ويُكمل فرحتنا<br>نسأل الله أن يبارك ويجمع على خير" data-fr="Votre présence nous honorera et complétera notre joie.<br>Qu’Allah bénisse cette union.">حضوركم يُشرّفنا ويُكمل فرحتنا<br>نسأل الله أن يبارك ويجمع على خير</div>
+      </div>
+    </section>
+    <div class="footer" data-ar="أهلاً وسهلاً بكم، وشكراً لمشاركتنا فرحتنا" data-fr="Bienvenue, et merci de partager notre joie.">أهلاً وسهلاً بكم، وشكراً لمشاركتنا فرحتنا</div>
+  </main>
+  <script>
+    function setLanguage(lang){
+      const fr=lang==="fr";
+      document.body.classList.toggle("fr",fr);
+      document.documentElement.lang=fr?"fr":"ar";
+      document.documentElement.dir=fr?"ltr":"rtl";
+      document.querySelectorAll("[data-ar]").forEach(el=>{
+        el.innerHTML=fr?el.dataset.fr:el.dataset.ar;
+      });
+      document.getElementById("arBtn").classList.toggle("active",!fr);
+      document.getElementById("frBtn").classList.toggle("active",fr);
+    }
+    document.getElementById("arBtn").addEventListener("click",()=>setLanguage("ar"));
+    document.getElementById("frBtn").addEventListener("click",()=>setLanguage("fr"));
+  </script>
+</body>
+</html>
